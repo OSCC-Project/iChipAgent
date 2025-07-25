@@ -304,6 +304,7 @@ class ChatViewProvider implements vscode.WebviewViewProvider {
     const highlightJsUri = this.getMediaUri("js/highlight.min.js");
     const highlightTclUri = this.getMediaUri("js/tcl_min.js");
     const markedJsUri = this.getMediaUri("js/marked.min.js");
+	const highlightCssUri = this.getMediaUri("github-dark.min.css");
 
     return `
         <!DOCTYPE html>
@@ -312,7 +313,7 @@ class ChatViewProvider implements vscode.WebviewViewProvider {
 				<meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<title>Chat with Models</title>
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+				<link rel="stylesheet" href="${highlightCssUri}">
 				<script src="${highlightJsUri}"></script>
 				<script src="${highlightTclUri}"></script>
 				<script src="${markedJsUri}"></script>
