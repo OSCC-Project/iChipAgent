@@ -1,5 +1,5 @@
 <div align="center">
-<img src="iCA.png" width="15%" height="15%" alt="iChipAgent-logo" />
+<img src="iCA-wsy.png" width="15%" height="15%" alt="iChipAgent-logo" />
  <h1>iChipAgent</h1>
 
 <h3> An AI Agent for Chip Design.</h3>
