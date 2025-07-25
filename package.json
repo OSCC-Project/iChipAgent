@@ -39,6 +39,19 @@
       ]
     }
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "src/extension.ts",
+    "out",
+    "resources",
+    "images",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    "node_modules"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -47,16 +60,20 @@
     "lint": "eslint src",
     "test": "vscode-test"
   },
+
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "@types/vscode": "^1.100.0",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+
+  "dependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
     "axios": "^1.4.0",
-    "eslint": "^9.25.1",
     "typescript": "^5.8.3"
   }
 }
