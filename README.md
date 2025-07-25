@@ -65,4 +65,10 @@ TBD
 
 Initial release of The iChipAgent.
 
+## Owner
+iEDA Team
+
+## License
+Mulan PSL v2
+
 
