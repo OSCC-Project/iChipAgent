@@ -43,7 +43,7 @@ npm install
 npm run compile
 code --extensionDevelopmentPath=.
 ```
-Press `F5` to open a new window with your extension loaded.
+Or press `F5` to open a new window with your extension loaded.
 
 ## Testing the Extension
 
@@ -60,8 +60,6 @@ TBD
 
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
