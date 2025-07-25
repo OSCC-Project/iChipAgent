@@ -33,7 +33,8 @@ export function activate(context: vscode.ExtensionContext) {
 
 async function callPythonAPI(api: string, data: any): Promise<any> {
   try {
-    const response = await axios.post(`http://localhost:5000/${api}`, data);
+	const fast_api_url = "http://192.168.205.231:5000";
+    const response = await axios.post(`${fast_api_url}/${api}`, data);
     return response.data;
     // return "test show message";
   } catch (error) {
