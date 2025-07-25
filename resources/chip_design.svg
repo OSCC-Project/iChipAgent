@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="256px" version="1.1" width="256px" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><rect fill="none" height="256px" stroke="lightgray" stroke-width="16" width="256px" x="0" y="0" /><line stroke="black" stroke-width="8" x1="40" x2="216" y1="128" y2="128" /><line stroke="black" stroke-width="8" x1="40" x2="216" y1="160" y2="160" /><text fill="black" font-family="微软雅黑" font-size="64px" x="80" y="240">Chip</text></svg>
