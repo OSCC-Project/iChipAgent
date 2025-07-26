@@ -1,6 +1,26 @@
-# iChipAgent
+<div align="center">
+<img src="/icon/iChipAgent.png" width="27%" alt="iChipAgent" />
+ <h1>iChipAgent</h1>
 
-The iChipAgent is a multi Agents system that provides a set of function for chip physical design.
+<h3> A multi agents system for chip design.</h3>
+
+<p align="center">
+    <a title="GitHub Watchers" target="_blank" href="https://github.com/OSCC-Project/iChipAgent/watchers">
+        <img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/OSCC-Project/iChipAgent.svg?label=Watchers&style=social" />
+    </a>
+    <a title="GitHub Stars" target="_blank" href="hhttps://github.com/OSCC-Project/iChipAgent/stargazers">
+        <img alt="GitHub Stars" src="https://img.shields.io/github/stars/OSCC-Project/iChipAgent.svg?label=Stars&style=social" />
+    </a>
+    <a title="GitHub Forks" target="_blank" href="https://github.com/OSCC-Project/iChipAgent/network/members">
+        <img alt="GitHub Forks" src="https://img.shields.io/github/forks/OSCC-Project/iChipAgent.svg?label=Forks&style=social" />
+    </a>
+</p>
+
+[Chinese] | **English**
+
+</div>
+
+
 
 ## Features
 
