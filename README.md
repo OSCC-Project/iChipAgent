@@ -56,7 +56,7 @@ npm run test
 
 ## Extension Settings
 
-TBD
+ctrl+Enter as shortcut to input message.
 
 
 ## Release Notes
