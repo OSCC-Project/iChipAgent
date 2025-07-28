@@ -74,6 +74,14 @@ npm install --save-dev @vscode/test-cli @vscode/test-electron
 npm run test
 ```
 
+## Installation
+
+To install the extension, you can use vscode vsce package command to build the .vsix file and install it manually(ctrl + P, type: Install from VSIX ..).
+
+```bash
+vsce package
+```
+
 ## Extension Settings
 
 ctrl+Enter as shortcut to input message.
