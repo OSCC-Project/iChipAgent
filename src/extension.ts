@@ -535,7 +535,6 @@ class ChatViewProvider implements vscode.WebviewViewProvider {
 						<div id="input-bottom">
 							<select id="dropdown-mode">
 								<option value="Ask">Ask</option>
-								<option value="Edit">Edit</option>
 								<option value="Agent">Agent</option>
 							</select>
 						</div>
