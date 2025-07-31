@@ -65,7 +65,7 @@ code --extensionDevelopmentPath=.
 ```
 Or press `F5` to open a new window with your extension loaded.
 
-## Testing the Extension
+## Unit Testing
 
 To test extension, you'll want to first install the @vscode/test-cli module, as well as @vscode/test-electron module that enables tests to be run in VS Code Desktop:
 
@@ -86,6 +86,11 @@ vsce package
 
 ctrl+Enter as shortcut to input message.
 
+## Test 
+For test the extension, you can use the following prompt:
+- "What is the iEDA?"
+- "I want to know How to use the iSTA, please generate the iSTA tcl script?"
+
 
 ## Release Notes
 
@@ -98,5 +103,8 @@ iEDA Team
 
 ## License
 Mulan PSL v2
+
+## Contact Us
+simintao@126.com
 
 
