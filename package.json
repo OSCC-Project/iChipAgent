@@ -2,6 +2,8 @@
   "name": "ichipagent",
   "displayName": "iChipAgent",
   "description": "The chip design agents built by iEDA team.",
+  "publisher": "OSCC-iEDA",
+  "license": "Mulan PSL v2",
   "version": "0.0.1",
   "repository": {
     "type": "git",
