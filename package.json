@@ -37,6 +37,16 @@
           "icon": "resources/iEDA_24x24.svg"
         }
       ]
+    },
+    "configuration": {
+      "title": "iChipAgent",
+      "properties": {
+        "ichipagent.mcpServerUrl": {
+          "type": "string",
+          "default": "tbd",
+          "description": "MCP Server URL for Run iEDA Tools agent"
+        }
+      }
     }
   },
   "files": [

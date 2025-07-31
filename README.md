@@ -85,18 +85,27 @@ vsce package
 ## Extension Settings
 
 ctrl+Enter as shortcut to input message.
+"/clear" for clear the input message.
 
 ## Test 
 For test the extension, you can use the following prompt:
 - "What is the iEDA?"
 - "I want to know How to use the iSTA, please generate the iSTA tcl script?"
 
+## Run MCP Tool
+First, you need config the MCP tool path in the settings.json file.
+```json
+"ichipagent.mcpServerUrl": "http://192.168.224.167:3002/sse"
+```
+Then, you need download the MCP tool from https://github.com/OSCC-Project/iMCP and start the MCP server.
+Finally, you can run the MCP tool.
+
 
 ## Release Notes
 
 ### 0.0.1
 
-Initial release of The iChipAgent.
+Initial release of The iChipAgent. Currently, it is a prototype for inner development.
 
 ## Owner
 iEDA Team
@@ -105,6 +114,8 @@ iEDA Team
 Mulan PSL v2
 
 ## Contact Us
-simintao@126.com
+lixq01@pcl.ac.cn
+taosm@pcl.ac.cn
+
 
 

@@ -33,7 +33,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 async function callPythonAPI(api: string, data: any): Promise<any> {
   try {
-	const fast_api_url = "http://192.168.205.231:5000";
+    const fast_api_url = "http://192.168.205.231:5000";
     const response = await axios.post(`${fast_api_url}/${api}`, data);
     return response.data;
     // return "test show message";
@@ -261,12 +261,36 @@ class ChatViewProvider implements vscode.WebviewViewProvider {
       this.currentAgent === "Run Tools" ||
       this.currentAgent === "Analyze Reports"
     ) {
+      // Get MCP server URL from settings
+      const config = vscode.workspace.getConfiguration("ichipagent");
+      const mcpServerUrl = config.get("mcpServerUrl", "tbd");
+
+      if (
+        mcpServerUrl === "tbd" &&
+        (this.currentAgent === "Run Tools" ||
+          this.currentAgent === "Analyze Reports")
+      ) {
+        vscode.window.showErrorMessage(
+          "Please set MCP server URL in settings."
+        );
+        webviewView.webview.postMessage({
+          command: "updateResponse",
+          message: {
+            raw: "Please set MCP server URL in settings.json according the README.md.",
+          },
+        });
+        return;
+      }
+
+      console.log("connect mcp server url:", mcpServerUrl);
+
       callPythonAPI("agent", {
         model_name: modelSelected,
         prompt: prompt,
         agent_name: this.currentAgent,
         selected_tool: this.currentTool,
         report_text: this.reportText,
+        mcp_server_url: mcpServerUrl,
       }).then((result) => {
         const response =
           result && result.raw ? result.raw : "No response received";
@@ -305,7 +329,7 @@ class ChatViewProvider implements vscode.WebviewViewProvider {
     const highlightJsUri = this.getMediaUri("js/highlight.min.js");
     const highlightTclUri = this.getMediaUri("js/tcl_min.js");
     const markedJsUri = this.getMediaUri("js/marked.min.js");
-	const highlightCssUri = this.getMediaUri("github-dark.min.css");
+    const highlightCssUri = this.getMediaUri("github-dark.min.css");
 
     return `
         <!DOCTYPE html>
