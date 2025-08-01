@@ -5,7 +5,7 @@
   "publisher": "iEDA",
   "license": "Mulan PSL v2",
   "version": "0.0.2",
-  "icon": "icon/iCA.png",
+  "icon": "resources/iCA.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/OSCC-Project/iChipAgent.git"
