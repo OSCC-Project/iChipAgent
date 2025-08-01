@@ -105,7 +105,11 @@ Finally, you can run the MCP tool.
 
 ### 0.0.1
 
-Initial release of The iChipAgent. Currently, it is a prototype for inner development.
+Initial release of The iChipAgent. Currently, it is a prototype for **inner development**, and will be provide public service in the future.
+
+### 0.0.2
+
+Update the icon.
 
 ## Owner
 iEDA Team
@@ -114,8 +118,8 @@ iEDA Team
 Mulan PSL v2
 
 ## Contact Us
-lixq01@pcl.ac.cn
-taosm@pcl.ac.cn
+- lixq01@pcl.ac.cn
+- taosm@pcl.ac.cn
 
 
 
